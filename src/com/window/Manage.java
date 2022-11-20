@@ -117,6 +117,13 @@ public class Manage extends JFrame {
         this.add(jpanel_1);
         this.add(menubar);
         this.setJMenuBar(menubar);
+        String data[]=new String[5];
+        data[0]= "张三";
+        data[1]= "123456";
+        data[2]= "12";
+        data[3]="码农";
+        data[4]="是";
+        Manage.model.addRow(data);
         allEvent();
     }
     void table(){
