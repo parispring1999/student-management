@@ -68,7 +68,7 @@ public class Manage extends JFrame {
         clatext=new JTextField(18);
         pro=new JLabel("专业");
         protext=new JTextField(18);
-        num=new JLabel("号码");
+        num=new JLabel("电话");
         numtext=new JTextField(18);
         yon=new JLabel("是否核酸");
         yontext=new JTextField(18);
