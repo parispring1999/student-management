@@ -106,6 +106,8 @@ public class Manage extends JFrame {
         jpanel_1.add(clatext);
         jpanel_1.add(pro);
         jpanel_1.add(protext);
+        jpanel_1.add(num);
+        jpanel_1.add(numtext);
         jpanel_1.add(add);
         jpanel_1.add(del);
         jpanel_1.add(c);
