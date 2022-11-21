@@ -65,11 +65,11 @@ public class Manage extends JFrame {
         number=new JLabel("学号");
         numbertext=new JTextField(18);
         cla=new JLabel("年级");
-        clatext=new JTextField(20);
+        clatext=new JTextField(18);
         pro=new JLabel("专业");
-        protext=new JTextField(20);
+        protext=new JTextField(18);
         num=new JLabel("号码");
-        numtext=new JTextField(20);
+        numtext=new JTextField(18);
         yon=new JLabel("是否核酸");
         yontext=new JTextField(18);
         add=new JButton("增加数据");
