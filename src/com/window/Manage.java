@@ -17,12 +17,12 @@ public class Manage extends JFrame {
     JMenu menu,menu1;
     JMenuItem item,item1;
     JPanel jpanel_1,jpanel_2;
-    JLabel name,number,yon,cla,pro;
-    public static JTextField nametext,numbertext,yontext,clatext,protext;
+    JLabel name,number,yon,cla,pro,num;
+    public static JTextField nametext,numbertext,yontext,clatext,protext,numtext;
     JButton add,del,c,v1,v2,v3;
     //JLabel numbercondition;
     //JTextField numberconditiontext;
-    Object columns[]={"姓名","学号","班级","专业","是否核酸"};
+    Object columns[]={"姓名","学号","年级","专业","电话","是否核酸"};
     JTable tableL;
     JScrollPane jscrollpane;
     static Vector rwo;
@@ -64,10 +64,12 @@ public class Manage extends JFrame {
         nametext=new JTextField(18);
         number=new JLabel("学号");
         numbertext=new JTextField(18);
-        cla=new JLabel("班级");
-        clatext=new JTextField(30);
+        cla=new JLabel("年级");
+        clatext=new JTextField(20);
         pro=new JLabel("专业");
-        protext=new JTextField(30);
+        protext=new JTextField(20);
+        num=new JLabel("号码");
+        numtext=new JTextField(20);
         yon=new JLabel("是否核酸");
         yontext=new JTextField(18);
         add=new JButton("增加数据");
@@ -117,12 +119,13 @@ public class Manage extends JFrame {
         this.add(jpanel_1);
         this.add(menubar);
         this.setJMenuBar(menubar);
-        String data[]=new String[5];
+        String data[]=new String[6];
         data[0]= "张三";
-        data[1]= "123456";
-        data[2]= "12";
-        data[3]="码农";
-        data[4]="是";
+        data[1]= "2022000";
+        data[2]= "一年级";
+        data[3]="CS";
+        data[4]="5000000";
+        data[5]="是";
         Manage.model.addRow(data);
         allEvent();
     }
@@ -136,7 +139,7 @@ public class Manage extends JFrame {
     JTable getTable() {
         if (tableL == null) {
             tableL = new JTable();
-            int[] columnWidth = {60,60,60,60,60};
+            int[] columnWidth = {50,50,50,50,50,50};
             model = new DefaultTableModel() {
                 public boolean isCellEditable(int row, int column) {
                     return false;
